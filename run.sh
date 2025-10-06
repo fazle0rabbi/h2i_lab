@@ -7,8 +7,8 @@ set -xe
 # COOKBOOK_CONDA_ENV: Name of the conda environment
 # IS_GPU_JOB: Boolean value to indicate if the job is a GPU job. If true, it will load the CUDA module
 export GIT_REPO_URL="https://github.com/fazle0rabbi/h2i_lab.git"
-export COOKBOOK_NAME="cookbook-template-jupyter"
-export COOKBOOK_CONDA_ENV="example"
+export COOKBOOK_NAME="cookbook-h2iUTA-jupyter"
+export COOKBOOK_CONDA_ENV="h2iUTA"
 IS_GPU_JOB=false
 
 
