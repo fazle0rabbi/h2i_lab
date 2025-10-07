@@ -1,5 +1,5 @@
 {
-  "id": "cookbook-jupyter-template-cpu",
+  "id": "h2ilab-uta",
   "version": "0.0.2",
   "description": "Jupyter Lab environment for CPU",
   "owner": "${apiUserId}",
