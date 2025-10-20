@@ -1,7 +1,52 @@
 name: llm
 channels:
   - conda-forge
+  - defaults
+
 dependencies:
-  - ipywidgets
+  # Core Jupyter environment
+  - python=3.10
   - ipykernel
   - jupyterlab
+  - ipywidgets
+  - widgetsnbextension
+
+  # Scientific stack
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - h5py
+  - xarray
+  - netcdf4
+  - gdown
+
+  # Geospatial stack
+  - geopandas
+  - rasterio
+  - rioxarray
+  - pyproj
+  - shapely
+  - fiona
+  - gdal
+
+  # Mapping & visualization
+  - folium
+  - branca
+  - ipyleaflet
+  - localtileserver
+
+  # InSAR / MintPy
+  - mintpy
+
+  # Utilities
+  - requests
+  - pillow
+  - tqdm
+
+  # OPERA/DISP and others via pip
+  - pip
+  - pip:
+      - opera-utils
+      - disp-xr
+
