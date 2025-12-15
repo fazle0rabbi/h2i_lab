@@ -7,7 +7,7 @@
   "runtime": "SINGULARITY",
   "runtimeVersion": null,
   "runtimeOptions": ["SINGULARITY_RUN"],
-  "containerImage": "docker://ghcr.io/fazle0rabbi/h2i_lab-cpu:sha-b6d52bc",
+  "containerImage": "docker://ghcr.io/fazle0rabbi/h2i_lab-cpu:sha-786ac4d",
   "jobType": "BATCH",
   "maxJobs": -1,
   "maxJobsPerUser": -1,
