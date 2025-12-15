@@ -1,6 +1,6 @@
 {
   "id": "trail-h2ilab-uta",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Jupyter Lab environment for CPU",
   "owner": "${apiUserId}",
   "enabled": true,
@@ -141,7 +141,7 @@
   },
   "tags": ["portalName: ALL"],
   "notes": {
-    "label": "Cookbook - Jupyter Lab (CPU)",
+    "label": "Cookbook UTA H2I lab",
     "hideNodeCountAndCoresPerNode": true,
     "isInteractive": true,
     "icon": "jupyter",
