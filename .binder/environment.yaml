@@ -35,8 +35,8 @@ dependencies:
   - localtileserver
 
 
-  # # OPERA/DISP and others via pip
-  # - pip
-  # - pip:
-  #     - opera-utils
-  #     - disp-xr
+  # OPERA/DISP and others via pip
+  - pip
+  - pip:
+      - opera-utils
+
