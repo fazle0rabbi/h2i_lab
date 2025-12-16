@@ -1,6 +1,6 @@
 {
   "id": "trail-h2ilab-uta",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Jupyter Lab environment for CPU",
   "owner": "${apiUserId}",
   "enabled": true,
