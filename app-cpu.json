@@ -141,7 +141,7 @@
   },
   "tags": ["portalName: ALL"],
   "notes": {
-    "label": "Cookbook UTA H2I lab",
+    "label": "Cookbook - Jupyter Lab (CPU)",
     "hideNodeCountAndCoresPerNode": true,
     "isInteractive": true,
     "icon": "jupyter",
