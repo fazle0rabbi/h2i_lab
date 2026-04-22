@@ -89,6 +89,7 @@ function clone_cookbook_on_workspace() {
 function init_directory() {
 	mkdir -p ${COOKBOOK_REPOSITORY_PARENT_DIR}
 	clone_cookbook_on_workspace
+	!wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py -O setup_env.py
 }
 
 function get_tap_certificate() {
