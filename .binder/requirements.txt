@@ -7,8 +7,11 @@ gdown
 geopandas
 rioxarray
 rasterio
-numcodecs
-zarr
+
+numpy<2.0
+numcodecs<0.13
+zarr<3.0
+
 matplotlib
 pandas
 pillow
