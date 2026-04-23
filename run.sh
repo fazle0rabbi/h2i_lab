@@ -284,12 +284,16 @@ get_tap_certificate
 get_tap_token
 create_jupyter_configuration
 handle_installation
-for i in 1 2 3; do
-    wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py \
-        -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py && break
-    echo "wget attempt $i failed, retrying..."
-    sleep 5
-done
+wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py \
+    -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py || \
+wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py \
+    -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py || \
+wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py \
+    -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py || \
+wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py \
+    -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py || \	
+wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py \
+    -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py	
 run_jupyter
 port_fowarding
 send_url_to_webhook
