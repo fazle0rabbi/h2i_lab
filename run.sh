@@ -89,7 +89,6 @@ function clone_cookbook_on_workspace() {
 function init_directory() {
 	mkdir -p ${COOKBOOK_REPOSITORY_PARENT_DIR}
 	clone_cookbook_on_workspace
-	wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py
 }
 
 function get_tap_certificate() {
@@ -285,6 +284,7 @@ get_tap_certificate
 get_tap_token
 create_jupyter_configuration
 handle_installation
+wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py
 run_jupyter
 port_fowarding
 send_url_to_webhook
