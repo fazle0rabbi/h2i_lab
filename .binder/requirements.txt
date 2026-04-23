@@ -8,9 +8,9 @@ geopandas
 rioxarray
 rasterio
 
-numpy<2.0
-numcodecs<0.13
-zarr<3.0
+numpy==1.26.4
+zarr>=3.0
+numcodecs>=0.13
 
 matplotlib
 pandas
