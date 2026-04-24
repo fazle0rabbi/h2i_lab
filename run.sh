@@ -248,6 +248,14 @@ function create_conda_environment() {
 		pip install --no-cache-dir -r $COOKBOOK_WORKSPACE_DIR/.binder/requirements.txt
 	fi
 	python -m ipykernel install --user --name "${COOKBOOK_CONDA_ENV}" --display-name "Python (${COOKBOOK_CONDA_ENV})"
+	python -c "
+import urllib.request
+urllib.request.urlretrieve(
+    'https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py',
+    '${COOKBOOK_WORKSPACE_DIR}/setup_env.py'
+)
+print('setup_env.py downloaded successfully')
+"
 }
 
 function delete_conda_environment() {
@@ -284,16 +292,6 @@ get_tap_certificate
 get_tap_token
 create_jupyter_configuration
 handle_installation
-wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py \
-    -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py || \
-wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py \
-    -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py || \
-wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py \
-    -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py || \
-wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py \
-    -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py || \	
-wget https://raw.githubusercontent.com/OPERA-Cal-Val/OPERA_Applications/main/DISP/Discover/setup_env.py \
-    -O ${COOKBOOK_WORKSPACE_DIR}/setup_env.py	
 run_jupyter
 port_fowarding
 send_url_to_webhook
