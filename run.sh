@@ -30,7 +30,6 @@ export UPDATE_CONDA_ENV=$2
 export GIT_BRANCH=$3
 
 function install_conda() {
-    WORK=${WORK:-/work/$(id -u)/$(whoami)/ls6}
 	echo "Checking if miniconda3 is installed..."
 	if [ ! -d "$WORK/miniconda3" ]; then
 		echo "Miniconda not found in $WORK..."
