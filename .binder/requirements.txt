@@ -7,11 +7,9 @@ gdown
 geopandas
 rioxarray
 rasterio
-
 numpy==1.26.4
 zarr>=3.0
 numcodecs>=0.14
-
 matplotlib
 pandas
 pillow
@@ -24,3 +22,5 @@ botocore
 boto3
 h5netcdf
 netCDF4
+rich
+leafmap
