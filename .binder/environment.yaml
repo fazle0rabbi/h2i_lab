@@ -27,6 +27,7 @@ dependencies:
   - shapely
   - fiona
   - gdal
+  - libgdal-netcdf
 
   # Mapping & visualization
   - folium
