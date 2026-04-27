@@ -1,25 +1,43 @@
 name: llm
+
 channels:
   - conda-forge
 
 dependencies:
+  # Core
   - python=3.11
+  - pip
+
+  # Jupyter
   - ipykernel
   - jupyterlab
   - ipywidgets
   - widgetsnbextension
+  - ipyfilechooser=0.6.0
 
-  # Scientific stack
+  # Scientific / Data
   - numpy
+  - scipy
   - pandas
   - matplotlib
-  - scipy
-  - h5py
   - xarray
+  - h5py
+  - h5netcdf
   - netcdf4
-  - gdown
+  - zarr>=3.0
+  - numcodecs>=0.14
 
-  # Geospatial stack
+  # IO / Cloud / Web
+  - requests
+  - aiohttp
+  - fsspec
+  - s3fs
+  - boto3
+  - botocore
+  - gdown
+  - rich
+
+  # Geospatial
   - geopandas
   - rasterio
   - rioxarray
@@ -29,15 +47,18 @@ dependencies:
   - gdal
   - libgdal-netcdf
 
-  # Mapping & visualization
+  # Mapping / Visualization
   - folium
   - branca
   - ipyleaflet
   - localtileserver
+  - leafmap
+  - pillow
 
+  # Remote sensing / InSAR
+  - mintpy
 
-  # OPERA/DISP and others via pip
-  - pip
+  # Pip-only packages
   - pip:
-      - opera-utils
+      - opera-utils      
 
